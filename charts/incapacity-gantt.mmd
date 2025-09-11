@@ -1,0 +1,47 @@
+gantt
+    dateFormat  YYYY-MM-DD
+    title Incapacity Plan — Q4 2024 to Jan 2026
+    excludes    weekends
+
+    section Sprints
+    Sprint 1                      :s1, 2024-09-02, 2024-09-13
+    Sprint 2                      :s2, 2024-09-16, 2024-09-27
+    Sprint 3                      :s3, 2024-09-30, 2024-10-11
+    Sprint 4                      :s4, 2024-10-14, 2024-10-25
+    Sprint 5                      :s5, 2024-10-28, 2024-11-08
+    Sprint 6                      :s6, 2024-11-11, 2024-11-22
+    Sprint 7                      :s7, 2024-11-25, 2024-12-06
+    Sprint 8                      :s8, 2024-12-09, 2024-12-20
+
+    section Core Scope
+    Incapacity setup & data prep (DmfA)    :active, 2024-09-02, 2024-09-13
+    Flux integrations (PRM, A052 in DS)    :active, 2024-09-16, 2024-09-27
+    Potential beneficiaries list           :active, 2024-09-23, 2024-10-04
+    AAC Batch consultation in Incapacity   :active, 2024-09-30, 2024-10-11
+    Eligibility calculation engine         :active, 2024-09-30, 2024-10-18
+    Issuance of the benefit                :active, 2024-10-14, 2024-11-08
+
+    section Vault & Unions
+    Vault changes to support JSON (ext)    :crit, 2024-10-28, 2024-11-22
+    Vault integration with Incapacity      :active, 2024-11-04, 2024-11-22
+    Union JSON API decision (blocker)      :milestone, 2024-10-21, 1d
+    Milestone 2 — demo week (mocked unions):milestone, m2, 2024-11-18, 1d
+    Unions test session #1                 :milestone, mu1, 2024-12-08, 1d
+    Unions test session #2 (fallback)      :milestone, mu2, 2024-12-15, 1d
+
+    section OCR, Letters, Migration
+    OCR check via MyFlux                   :active, 2024-11-18, 2024-12-06
+    Letter processing                      :active, 2024-11-18, 2024-11-29
+    Migration — Fonds.net analysis         :active, 2024-10-01, 2024-10-31
+    Migration — Phase 1 (≤ 3y impacting)   :crit,   2024-11-25, 2024-12-15
+    Migration — Phase 2 (> 3y, post‑release): 2025-01-06, 2025-02-28
+
+    section Testing & Demos
+    Milestone 1 — first demoable version   :milestone, m1, 2024-10-07, 1d
+    Test: potential beneficiaries (Oct)    :2024-10-10, 2d
+    Test: benefit rules (Oct)              :2024-10-24, 2d
+    Compare Fonds.net vs Fluxmet (Nov)     :2024-11-12, 4d
+    Validate eligibility for Jan issuance  :2024-12-05, 2d
+
+    section Target
+    First issuance Jan 2026                :milestone, goal, 2026-01-01, 1d
