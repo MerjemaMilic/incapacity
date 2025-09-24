@@ -1,0 +1,14 @@
+{
+  "Administrator": [
+    "Bob Wilson",
+    "John Doe"
+  ],
+  "User": [
+    "Alice Johnson",
+    "Jane Smith"
+  ],
+  "Moderator": [
+    "Charlie Brown",
+    "David Lee"
+  ]
+}
